@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOVIEDB</title>
+    <link rel="icon" href="./assets/images/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/images/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <a class="logo" href="/">
+              <img src="assets/images/logo.svg" alt="moviedb logo" />
+            </a>
+            <div class="search-bar">
+              <input
+                class="search-input js-search-input"
+                type="search"
+                placeholder="Пошук"
+              />
+              <button class="search-btn js-search-btn" type="button " disabled>
+                Шукати
+              </button>
+            </div>
+            <div class="nav-actions">
+              <button
+                class="btn icon-favorite js-favorite-btn"
+                type="button"
+                title="Ви обрали"
+              >
+                <span class="counter js-favorite-counter">0</span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="results">
+          <div class="container">
+            <h1>Останні новинки</h1>
+            <ul class="grid"></ul>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          Create by
+          <a class="link-space" href="https://JS-SPACE.dev" target="_blank"
+            >JS-SPACE.dev</a
+          >
+          and YourName/SiteLink
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
